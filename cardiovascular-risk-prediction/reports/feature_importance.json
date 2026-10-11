@@ -1,0 +1,87 @@
+[
+  {
+    "feature": "prevalentStroke",
+    "coefficient": 0.7005529694911955,
+    "importance": 0.7005529694911955
+  },
+  {
+    "feature": "age",
+    "coefficient": 0.6813220295999045,
+    "importance": 0.6813220295999045
+  },
+  {
+    "feature": "BPMeds",
+    "coefficient": 0.48256760146543803,
+    "importance": 0.48256760146543803
+  },
+  {
+    "feature": "diabetes",
+    "coefficient": 0.424553374464605,
+    "importance": 0.424553374464605
+  },
+  {
+    "feature": "sex",
+    "coefficient": 0.38489372956648527,
+    "importance": 0.38489372956648527
+  },
+  {
+    "feature": "prevalentHyp",
+    "coefficient": 0.34019101067583213,
+    "importance": 0.34019101067583213
+  },
+  {
+    "feature": "cigsPerDay",
+    "coefficient": 0.2905325941306912,
+    "importance": 0.2905325941306912
+  },
+  {
+    "feature": "sysBP",
+    "coefficient": 0.24373102385640016,
+    "importance": 0.24373102385640016
+  },
+  {
+    "feature": "education_2.0",
+    "coefficient": -0.1500455676231753,
+    "importance": 0.1500455676231753
+  },
+  {
+    "feature": "currentSmoker",
+    "coefficient": 0.13975269103174465,
+    "importance": 0.13975269103174465
+  },
+  {
+    "feature": "glucose",
+    "coefficient": 0.13826190374446007,
+    "importance": 0.13826190374446007
+  },
+  {
+    "feature": "totChol",
+    "coefficient": 0.07707524173721556,
+    "importance": 0.07707524173721556
+  },
+  {
+    "feature": "BMI",
+    "coefficient": -0.05586346226283356,
+    "importance": 0.05586346226283356
+  },
+  {
+    "feature": "education_3.0",
+    "coefficient": 0.02356021861485306,
+    "importance": 0.02356021861485306
+  },
+  {
+    "feature": "diaBP",
+    "coefficient": 0.016333216255753565,
+    "importance": 0.016333216255753565
+  },
+  {
+    "feature": "education_4.0",
+    "coefficient": -0.015919949577787283,
+    "importance": 0.015919949577787283
+  },
+  {
+    "feature": "heartRate",
+    "coefficient": -0.007683599293007528,
+    "importance": 0.007683599293007528
+  }
+]

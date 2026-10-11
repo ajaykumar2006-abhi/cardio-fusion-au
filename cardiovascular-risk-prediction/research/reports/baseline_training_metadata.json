@@ -1,0 +1,16 @@
+{
+  "best_model": "Logistic Regression",
+  "best_roc_auc": 0.7187500000000001,
+  "random_state": 42,
+  "model_count": 8,
+  "models_trained": [
+    "Logistic Regression",
+    "Decision Tree",
+    "KNN",
+    "SVM",
+    "Random Forest",
+    "Extra Trees",
+    "Gradient Boosting",
+    "XGBoost"
+  ]
+}

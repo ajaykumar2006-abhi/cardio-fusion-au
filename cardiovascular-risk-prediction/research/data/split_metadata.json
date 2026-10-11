@@ -1,0 +1,54 @@
+{
+  "train_samples": 2968,
+  "val_samples": 424,
+  "holdout_samples": 848,
+  "total_samples": 4240,
+  "feature_names": [
+    "sex",
+    "age",
+    "education",
+    "currentSmoker",
+    "cigsPerDay",
+    "BPMeds",
+    "prevalentStroke",
+    "prevalentHyp",
+    "diabetes",
+    "totChol",
+    "sysBP",
+    "diaBP",
+    "BMI",
+    "heartRate",
+    "glucose",
+    "pulse_pressure",
+    "age_group",
+    "bmi_category",
+    "bp_category",
+    "cholesterol_category",
+    "high_bp",
+    "high_glucose",
+    "high_cholesterol"
+  ],
+  "engineered_features": {
+    "pulse_pressure": "sysBP - diaBP",
+    "age_group": "Age categorization",
+    "bmi_category": "BMI categorization",
+    "bp_category": "BP categorization",
+    "cholesterol_category": "Cholesterol categorization",
+    "high_bp": "Systolic >=130 or Diastolic >=85",
+    "high_glucose": "Glucose >= 100",
+    "high_cholesterol": "Cholesterol >= 240"
+  },
+  "target_distribution_train": {
+    "negative": 2517,
+    "positive": 451
+  },
+  "target_distribution_val": {
+    "negative": 360,
+    "positive": 64
+  },
+  "target_distribution_holdout": {
+    "negative": 719,
+    "positive": 129
+  },
+  "random_state": 42
+}

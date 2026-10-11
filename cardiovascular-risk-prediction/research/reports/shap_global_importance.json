@@ -1,0 +1,70 @@
+[
+  {
+    "feature": "age",
+    "importance": 0.6101375182939593
+  },
+  {
+    "feature": "cigsPerDay",
+    "importance": 0.2606791794592903
+  },
+  {
+    "feature": "sysBP",
+    "importance": 0.19197779070226545
+  },
+  {
+    "feature": "sex",
+    "importance": 0.18193926596607712
+  },
+  {
+    "feature": "prevalentHyp",
+    "importance": 0.15376633682547589
+  },
+  {
+    "feature": "glucose",
+    "importance": 0.07241493721233672
+  },
+  {
+    "feature": "currentSmoker",
+    "importance": 0.06987634551587239
+  },
+  {
+    "feature": "education_2.0",
+    "importance": 0.06190880120132218
+  },
+  {
+    "feature": "totChol",
+    "importance": 0.0573694311883471
+  },
+  {
+    "feature": "BMI",
+    "importance": 0.046542596515548526
+  },
+  {
+    "feature": "diabetes",
+    "importance": 0.030780119648683848
+  },
+  {
+    "feature": "BPMeds",
+    "importance": 0.028085434405288386
+  },
+  {
+    "feature": "diaBP",
+    "importance": 0.01243764179940567
+  },
+  {
+    "feature": "heartRate",
+    "importance": 0.005650512421591039
+  },
+  {
+    "feature": "education_3.0",
+    "importance": 0.005513091155875616
+  },
+  {
+    "feature": "education_4.0",
+    "importance": 0.0033622933508286644
+  },
+  {
+    "feature": "prevalentStroke",
+    "importance": 0.0
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "model": "Logistic Regression (Production)",
+  "explainer_type": "LinearExplainer",
+  "background_samples": 100,
+  "test_samples": 200,
+  "feature_count": 17,
+  "shap_values_shape": [
+    200,
+    17
+  ]
+}

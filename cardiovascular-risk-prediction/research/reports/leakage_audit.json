@@ -1,0 +1,70 @@
+{
+  "checks": [
+    {
+      "check_name": "Train/Test Overlap",
+      "status": "PASS",
+      "details": "Stratified split with random_state=42 ensures no overlap"
+    },
+    {
+      "check_name": "Patient-Level Overlap",
+      "status": "PASS",
+      "details": "Dataset has no patient IDs - row-level split used"
+    },
+    {
+      "check_name": "Duplicate Rows",
+      "status": "PASS",
+      "details": "0 duplicate rows found"
+    },
+    {
+      "check_name": "Duplicate Feature Vectors",
+      "status": "PASS",
+      "details": "0 duplicate feature vectors found"
+    },
+    {
+      "check_name": "Target Leakage",
+      "status": "PASS",
+      "details": "Target removed from features before preprocessing"
+    },
+    {
+      "check_name": "Preprocessing Leakage",
+      "status": "PASS",
+      "details": "Preprocessor fitted on training data only"
+    },
+    {
+      "check_name": "Feature Selection Leakage",
+      "status": "PASS",
+      "details": "No feature selection performed - all features used"
+    },
+    {
+      "check_name": "Resampling Leakage",
+      "status": "PASS",
+      "details": "Class weighting used instead of resampling"
+    },
+    {
+      "check_name": "Hyperparameter Leakage",
+      "status": "PASS",
+      "details": "Hyperparameter optimization on development data only"
+    },
+    {
+      "check_name": "Threshold Leakage",
+      "status": "PASS",
+      "details": "Default threshold (0.5) used"
+    },
+    {
+      "check_name": "Calibration Leakage",
+      "status": "PASS",
+      "details": "No calibration performed"
+    },
+    {
+      "check_name": "Ensemble Leakage",
+      "status": "PASS",
+      "details": "No ensemble methods used"
+    },
+    {
+      "check_name": "External Validation Contamination",
+      "status": "PASS",
+      "details": "External validation not available - no contamination risk"
+    }
+  ],
+  "overall_status": "PASS"
+}

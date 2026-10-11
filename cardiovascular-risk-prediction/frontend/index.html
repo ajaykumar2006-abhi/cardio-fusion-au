@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardiovascular Risk Assessment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>Cardiovascular Risk Assessment</h1>
+            <p class="subtitle">AI-Based 10-Year CHD Risk Prediction</p>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="nav">
+            <button class="nav-btn active" data-step="1">Patient Details</button>
+            <button class="nav-btn" data-step="2">Clinical Information</button>
+            <button class="nav-btn" data-step="3">Medical History</button>
+            <button class="nav-btn" data-step="4">Lifestyle</button>
+            <button class="nav-btn" data-step="5">Review</button>
+            <button class="nav-btn" data-step="6">Results</button>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Step 1: Patient Details -->
+            <section class="step active" id="step1">
+                <h2>Patient Details</h2>
+                <form class="form">
+                    <div class="form-group">
+                        <label for="sex">Sex</label>
+                        <select id="sex" name="sex" required>
+                            <option value="">Select</option>
+                            <option value="0">Female</option>
+                            <option value="1">Male</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="age">Age (years)</label>
+                        <input type="number" id="age" name="age" min="18" max="100" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="education">Education Level</label>
+                        <select id="education" name="education" required>
+                            <option value="">Select</option>
+                            <option value="1">Some High School (0-11 years)</option>
+                            <option value="2">High School Diploma / GED</option>
+                            <option value="3">Some College / Vocational School</option>
+                            <option value="4">College Graduate</option>
+                        </select>
+                    </div>
+                    <button type="button" class="btn btn-primary" onclick="nextStep(2)">Next</button>
+                </form>
+            </section>
+
+            <!-- Step 2: Clinical Information -->
+            <section class="step" id="step2">
+                <h2>Clinical Information</h2>
+                <form class="form">
+                    <div class="form-group">
+                        <label for="totChol">Total Cholesterol (mg/dL)</label>
+                        <input type="number" id="totChol" name="totChol" min="50" max="800" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="sysBP">Systolic Blood Pressure (mmHg)</label>
+                        <input type="number" id="sysBP" name="sysBP" min="50" max="300" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="diaBP">Diastolic Blood Pressure (mmHg)</label>
+                        <input type="number" id="diaBP" name="diaBP" min="30" max="200" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="BMI">BMI (kg/m²)</label>
+                        <input type="number" id="BMI" name="BMI" min="10" max="100" step="0.1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="heartRate">Heart Rate (bpm)</label>
+                        <input type="number" id="heartRate" name="heartRate" min="30" max="250" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="glucose">Glucose (mg/dL)</label>
+                        <input type="number" id="glucose" name="glucose" min="20" max="1000" required>
+                    </div>
+                    <div class="form-actions">
+                        <button type="button" class="btn btn-secondary" onclick="prevStep(1)">Previous</button>
+                        <button type="button" class="btn btn-primary" onclick="nextStep(3)">Next</button>
+                    </div>
+                </form>
+            </section>
+
+            <!-- Step 3: Medical History -->
+            <section class="step" id="step3">
+                <h2>Medical History</h2>
+                <form class="form">
+                    <div class="form-group checkbox-group">
+                        <label>
+                            <input type="checkbox" id="BPMeds" name="BPMeds" value="1">
+                            Currently taking blood pressure medication
+                        </label>
+                    </div>
+                    <div class="form-group checkbox-group">
+                        <label>
+                            <input type="checkbox" id="prevalentStroke" name="prevalentStroke" value="1">
+                            History of stroke
+                        </label>
+                    </div>
+                    <div class="form-group checkbox-group">
+                        <label>
+                            <input type="checkbox" id="prevalentHyp" name="prevalentHyp" value="1">
+                            History of hypertension
+                        </label>
+                    </div>
+                    <div class="form-group checkbox-group">
+                        <label>
+                            <input type="checkbox" id="diabetes" name="diabetes" value="1">
+                            History of diabetes
+                        </label>
+                    </div>
+                    <div class="form-actions">
+                        <button type="button" class="btn btn-secondary" onclick="prevStep(2)">Previous</button>
+                        <button type="button" class="btn btn-primary" onclick="nextStep(4)">Next</button>
+                    </div>
+                </form>
+            </section>
+
+            <!-- Step 4: Lifestyle -->
+            <section class="step" id="step4">
+                <h2>Lifestyle Assessment</h2>
+                <form class="form">
+                    <div class="form-group checkbox-group">
+                        <label>
+                            <input type="checkbox" id="currentSmoker" name="currentSmoker" value="1" onchange="toggleCigsPerDay()">
+                            Current smoker
+                        </label>
+                    </div>
+                    <div class="form-group" id="cigsPerDayGroup" style="display: none;">
+                        <label for="cigsPerDay">Cigarettes per day</label>
+                        <input type="number" id="cigsPerDay" name="cigsPerDay" min="0" max="100">
+                    </div>
+                    <div class="form-actions">
+                        <button type="button" class="btn btn-secondary" onclick="prevStep(3)">Previous</button>
+                        <button type="button" class="btn btn-primary" onclick="nextStep(5)">Next</button>
+                    </div>
+                </form>
+            </section>
+
+            <!-- Step 5: Review -->
+            <section class="step" id="step5">
+                <h2>Review Information</h2>
+                <div class="review-container" id="reviewContainer">
+                    <!-- Dynamic review content -->
+                </div>
+                <div class="form-actions">
+                    <button type="button" class="btn btn-secondary" onclick="prevStep(4)">Previous</button>
+                    <button type="button" class="btn btn-primary" onclick="submitAssessment()">Get Risk Assessment</button>
+                </div>
+            </section>
+
+            <!-- Step 6: Results -->
+            <section class="step" id="step6">
+                <h2>Risk Assessment Results</h2>
+                <div id="resultsContainer">
+                    <div class="loading">Loading...</div>
+                </div>
+                <div class="form-actions">
+                    <button type="button" class="btn btn-secondary" onclick="resetAssessment()">New Assessment</button>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="disclaimer">
+                <strong>IMPORTANT DISCLAIMER:</strong> This is an AI-based research tool for educational purposes only. 
+                It is NOT a medical device and should NOT be used for clinical diagnosis or medical decision making. 
+                Results should be reviewed by qualified healthcare professionals.
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+{
+  "basic_stats": {
+    "rows": 4240,
+    "columns": 16,
+    "memory_usage_mb": 0.5177040100097656
+  },
+  "target_analysis": {
+    "name": "TenYearCHD",
+    "type": "binary",
+    "total": 4240,
+    "negative": 3596,
+    "positive": 644,
+    "negative_pct": 84.81132075471697,
+    "positive_pct": 15.188679245283017,
+    "imbalance_ratio": 5.583850931677019,
+    "missing": 0
+  },
+  "feature_analysis": {
+    "binary": [
+      "sex",
+      "currentSmoker",
+      "BPMeds",
+      "prevalentStroke",
+      "prevalentHyp",
+      "diabetes"
+    ],
+    "categorical": [
+      "education"
+    ],
+    "continuous": [
+      "age",
+      "cigsPerDay",
+      "totChol",
+      "sysBP",
+      "diaBP",
+      "BMI",
+      "heartRate",
+      "glucose"
+    ],
+    "target": "TenYearCHD"
+  },
+  "missing_analysis": {
+    "total_missing": 645,
+    "columns_with_missing": 7,
+    "details": {
+      "education": {
+        "count": 105,
+        "percentage": 2.4764150943396226
+      },
+      "cigsPerDay": {
+        "count": 29,
+        "percentage": 0.6839622641509434
+      },
+      "BPMeds": {
+        "count": 53,
+        "percentage": 1.25
+      },
+      "totChol": {
+        "count": 50,
+        "percentage": 1.179245283018868
+      },
+      "BMI": {
+        "count": 19,
+        "percentage": 0.4481132075471698
+      },
+      "heartRate": {
+        "count": 1,
+        "percentage": 0.02358490566037736
+      },
+      "glucose": {
+        "count": 388,
+        "percentage": 9.150943396226415
+      }
+    }
+  },
+  "outlier_analysis": {
+    "age": {
+      "count": 0,
+      "percentage": 0.0,
+      "lower_bound": 21.0,
+      "upper_bound": 77.0,
+      "min": 

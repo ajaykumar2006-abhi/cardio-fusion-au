@@ -1,0 +1,48 @@
+{
+  "patient_idx": 0,
+  "base_value": -0.29349552447169047,
+  "positive_contributors": [
+    {
+      "feature": "sex",
+      "contribution": 0.24248304962688572
+    },
+    {
+      "feature": "education_2.0",
+      "contribution": 0.04651412596318435
+    },
+    {
+      "feature": "prevalentStroke",
+      "contribution": 0.0
+    },
+    {
+      "feature": "heartRate",
+      "contribution": -0.0027569730412846365
+    },
+    {
+      "feature": "education_3.0",
+      "contribution": -0.002827226233782367
+    }
+  ],
+  "negative_contributors": [
+    {
+      "feature": "currentSmoker",
+      "contribution": -0.07406892624682467
+    },
+    {
+      "feature": "prevalentHyp",
+      "contribution": -0.11906685373654123
+    },
+    {
+      "feature": "cigsPerDay",
+      "contribution": -0.24160677511201717
+    },
+    {
+      "feature": "sysBP",
+      "contribution": -0.312025030152039
+    },
+    {
+      "feature": "age",
+      "contribution": -0.8361532349086103
+    }
+  ]
+}
